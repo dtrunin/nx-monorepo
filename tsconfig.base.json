@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-monorepo/feature-course-list": [
+        "libs/courses/feature-course-list/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

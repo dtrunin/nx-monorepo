@@ -1,12 +1,11 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.scss';
-
-import NxWelcome from './nx-welcome';
+import { FeatureCourseList } from '@nx-monorepo/feature-course-list';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="courses" />
+      <FeatureCourseList />
     </div>
   );
 }
