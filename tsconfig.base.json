@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-monorepo/data-access-course-list": [
+        "libs/courses/data-access-course-list/src/index.ts"
+      ],
       "@nx-monorepo/feature-course-list": [
         "libs/courses/feature-course-list/src/index.ts"
       ]
