@@ -4,12 +4,12 @@ import CourseCard from './course-card/course-card';
 import SearchBar from './search-bar/search-bar';
 
 export function FeatureCourseList() {
-  const courses = useCourses();
+  const { courses, setFilter } = useCourses();
 
   return (
     <>
       <div className={styles['top-panel']}>
-        <SearchBar />
+        <SearchBar onChange={setFilter} />
       </div>
       <div className={styles['courses']}>
         {courses.map((c) => (
