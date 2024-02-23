@@ -1,7 +1,22 @@
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+.card {
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.08));
+  background: #FFFFFF;
+  border: 1px solid #0000001F;
+  box-shadow: 1px 1px 3px 0 #00000014;
+  padding: 11px 31px 35px 31px;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 3fr minmax(100px, 1fr);
+  gap: 45px;
+}
+
+.info-title {
+  font-weight: bold;
+}
+
+.buttons {
+  padding-top: 31px;
+
+}

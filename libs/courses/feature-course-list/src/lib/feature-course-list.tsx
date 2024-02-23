@@ -6,11 +6,11 @@ export function FeatureCourseList() {
   const courses = useCourses();
 
   return (
-    <>
+    <div className={styles['courses']}>
       {courses.map((c) => (
-        <CourseCard />
+        <CourseCard key={c.id} course={c} />
       ))}
-    </>
+    </div>
   );
 }
 
