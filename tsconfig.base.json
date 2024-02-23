@@ -15,12 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-monorepo/data-access-course-list": [
+      "@nx-monorepo/courses-data-access-course-list": [
         "libs/courses/data-access-course-list/src/index.ts"
       ],
-      "@nx-monorepo/feature-course-list": [
+      "@nx-monorepo/courses-feature-course-list": [
         "libs/courses/feature-course-list/src/index.ts"
-      ]
+      ],
+      "@nx-monorepo/courses-shared-ui": ["libs/courses/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

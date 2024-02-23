@@ -1,5 +1,5 @@
 {
-  "name": "feature-course-list",
+  "name": "courses-feature-course-list",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/courses/feature-course-list/src",
   "projectType": "library",

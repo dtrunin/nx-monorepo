@@ -1,5 +1,5 @@
 import styles from './feature-course-list.module.scss';
-import { useCourses } from '@nx-monorepo/data-access-course-list';
+import { useCourses } from '@nx-monorepo/courses-data-access-course-list';
 import CourseCard from './course-card/course-card';
 
 export function FeatureCourseList() {

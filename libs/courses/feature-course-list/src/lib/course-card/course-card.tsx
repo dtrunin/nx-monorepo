@@ -1,5 +1,6 @@
 import styles from './course-card.module.scss';
-import { Course } from '@nx-monorepo/data-access-course-list';
+import { Course } from '@nx-monorepo/courses-data-access-course-list';
+import { Button } from '@nx-monorepo/courses-shared-ui';
 
 interface CourseInfoProps {
   name: string;
@@ -32,7 +33,7 @@ export function CourseCard({ course }: CourseCardProps) {
           <CourseInfo name="Duration" value={course.duration.toString()} />
           <CourseInfo name="Created" value={course.creationDate} />
           <div className={styles['buttons']}>
-            <button>show course</button>
+            <Button text="show course"></Button>
           </div>
         </div>
       </div>
