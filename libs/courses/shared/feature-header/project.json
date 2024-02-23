@@ -1,0 +1,8 @@
+{
+  "name": "courses-shared-feature-header",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/courses/shared/feature-header/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

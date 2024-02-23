@@ -21,6 +21,9 @@
       "@nx-monorepo/courses-feature-course-list": [
         "libs/courses/feature-course-list/src/index.ts"
       ],
+      "@nx-monorepo/courses-shared-feature-header": [
+        "libs/courses/shared/feature-header/src/index.ts"
+      ],
       "@nx-monorepo/courses-shared-ui": ["libs/courses/shared/ui/src/index.ts"]
     }
   },
