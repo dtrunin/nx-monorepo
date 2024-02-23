@@ -1,5 +1,5 @@
 import styles from './feature-header.module.scss';
-import { Button } from '@nx-monorepo/courses-shared-ui';
+import { Button, Logo } from '@nx-monorepo/courses-shared-ui';
 
 /* eslint-disable-next-line */
 export interface CoursesSharedFeatureHeaderProps {}
@@ -7,8 +7,7 @@ export interface CoursesSharedFeatureHeaderProps {}
 export function FeatureHeader(props: CoursesSharedFeatureHeaderProps) {
   return (
     <div className={styles['container']}>
-      <div></div>
-      <div></div>
+      <Logo />
       <div>
         <Button text="Login" />
       </div>

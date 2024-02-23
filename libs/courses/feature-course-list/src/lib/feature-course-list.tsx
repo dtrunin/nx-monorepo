@@ -7,7 +7,7 @@ export function FeatureCourseList() {
   const courses = useCourses();
 
   return (
-    <div>
+    <>
       <div className={styles['top-panel']}>
         <SearchBar />
       </div>
@@ -16,7 +16,7 @@ export function FeatureCourseList() {
           <CourseCard key={c.id} course={c} />
         ))}
       </div>
-    </div>
+    </>
   );
 }
 
