@@ -33,7 +33,7 @@ export function CourseCard({ course }: CourseCardProps) {
           <CourseInfo name="Duration" value={course.duration.toString()} />
           <CourseInfo name="Created" value={course.creationDate} />
           <div className={styles['buttons']}>
-            <Button text="show course"></Button>
+            <Button text="Show course"></Button>
           </div>
         </div>
       </div>

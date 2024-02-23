@@ -2,3 +2,9 @@
   display: grid;
   gap: 32px;
 }
+
+.top-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 33px;
+}
