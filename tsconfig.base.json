@@ -24,7 +24,13 @@
       "@nx-monorepo/courses-shared-feature-header": [
         "libs/courses/shared/feature-header/src/index.ts"
       ],
-      "@nx-monorepo/courses-shared-ui": ["libs/courses/shared/ui/src/index.ts"]
+      "@nx-monorepo/courses-shared-ui": ["libs/courses/shared/ui/src/index.ts"],
+      "@nx-monorepo/shared-util-formatting": [
+        "libs/shared/util/formatting/src/index.ts"
+      ],
+      "@nx-monorepo/shared-util-typescript": [
+        "libs/shared/util/typescript/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
