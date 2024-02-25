@@ -1,7 +1,7 @@
 import { Author, Course } from './facade.model';
 import { mockedAuthorsList, mockedCoursesList } from './store.data';
 import { isNil } from 'lodash-es';
-import { useCallback, useMemo, useState } from 'react';
+import { useState } from 'react';
 
 const allCourses: Course[] = mockedCoursesList.map((c) => ({
   ...c,
@@ -18,22 +18,19 @@ export interface CoursesFacade {
 export function useCourses(): CoursesFacade {
   const [filter, setFilter] = useState('');
 
-  const courses = useMemo(() => {
-    if (filter === '') {
-      return allCourses;
-    }
+  let courses: Course[];
 
+  if (filter === '') {
+    courses = allCourses;
+  } else {
     const filterRegExp = new RegExp(filter, 'i');
-
-    return allCourses.filter((c) =>
+    courses = allCourses.filter((c) =>
       [c.id, c.title].some((v) => v.search(filterRegExp) >= 0)
     );
-  }, [filter]);
+  }
 
-  const facadeSetFilter = useCallback<CoursesFacade['setFilter']>(
-    (value) => setFilter(value.trim()),
-    []
-  );
+  const facadeSetFilter: CoursesFacade['setFilter'] = (value) =>
+    setFilter(value.trim());
 
   return { courses, setFilter: facadeSetFilter };
 }
