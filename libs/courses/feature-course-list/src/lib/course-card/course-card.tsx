@@ -1,7 +1,10 @@
 import styles from './course-card.module.scss';
 import { Course } from '@nx-monorepo/courses-data-access-course-list';
 import { Button } from '@nx-monorepo/courses-shared-ui';
-import { formatDate } from '@nx-monorepo/shared-util-formatting';
+import {
+  formatDate,
+  formatDuration,
+} from '@nx-monorepo/shared-util-formatting';
 
 interface CourseInfoProps {
   name: string;
@@ -31,7 +34,7 @@ export function CourseCard({ course }: CourseCardProps) {
             name="Authors"
             value={course.authors.map((a) => a.name).join(', ')}
           />
-          <CourseInfo name="Duration" value={course.duration.toString()} />
+          <CourseInfo name="Duration" value={formatDuration(course.duration)} />
           <CourseInfo name="Created" value={formatDate(course.creationDate)} />
           <div className={styles['buttons']}>
             <Button text="Show course"></Button>

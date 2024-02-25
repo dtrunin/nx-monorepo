@@ -31,6 +31,15 @@ export type DateFormat =
   | 'longTime'
   | 'fullTime';
 
+/**
+ * Formats a date into a string based on the given format, locale, and timezone.
+ *
+ * @param {string | Date | number} date - The date to format. It can be a string, Date object, or number representing the date.
+ * @param {DateFormat} [format='shortDate'] - The format to use for the date.
+ * @param {string} [locale='en-US'] - The locale to use for formatting the date.
+ * @param {string} [timezone] - The timezone to use for formatting the date.
+ * @returns {string} The formatted date string.
+ */
 export function formatDate(
   date: string | Date | number,
   format: DateFormat = 'shortDate',
