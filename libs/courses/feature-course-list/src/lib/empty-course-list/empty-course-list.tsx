@@ -1,12 +1,14 @@
 import styles from './empty-course-list.module.scss';
+import { Button } from '@nx-monorepo/courses-shared-ui';
 
-/* eslint-disable-next-line */
-export interface EmptyCourseListProps {}
-
-export function EmptyCourseList(props: EmptyCourseListProps) {
+export function EmptyCourseList() {
   return (
     <div className={styles['container']}>
-      <h1>Welcome to EmptyCourseList!</h1>
+      <div className={styles['header']}>Your list is empty</div>
+      <div>Please use ’Add New Course’ button to add your first course</div>
+      <div>
+        <Button text="Add new course" />
+      </div>
     </div>
   );
 }

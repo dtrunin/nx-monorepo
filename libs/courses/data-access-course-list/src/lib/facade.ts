@@ -1,6 +1,6 @@
 import { Author, Course } from './facade.model';
 import { mockedAuthorsList, mockedCoursesList } from './store.data';
-import { isNil } from 'lodash-es';
+import { isEmpty, isNil } from 'lodash-es';
 import { useState } from 'react';
 
 const allCourses: Course[] = mockedCoursesList.map((c) => ({
@@ -12,14 +12,15 @@ const allCourses: Course[] = mockedCoursesList.map((c) => ({
 
 export interface CoursesFacade {
   courses: Course[];
+  isCoursesEmpty: boolean;
   setFilter: (value: string) => void;
 }
 
 export function useCourses(): CoursesFacade {
   const [filter, setFilter] = useState('');
+  const isCoursesEmpty = !isEmpty(allCourses);
 
   let courses: Course[];
-
   if (filter === '') {
     courses = allCourses;
   } else {
@@ -32,5 +33,5 @@ export function useCourses(): CoursesFacade {
   const facadeSetFilter: CoursesFacade['setFilter'] = (value) =>
     setFilter(value.trim());
 
-  return { courses, setFilter: facadeSetFilter };
+  return { courses, isCoursesEmpty, setFilter: facadeSetFilter };
 }

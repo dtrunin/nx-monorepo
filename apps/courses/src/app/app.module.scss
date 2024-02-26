@@ -1,8 +1,11 @@
 .container {
   display: grid;
   gap: 71px;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
 }
 
 .content {
+  display: grid;
   padding: 0 160px;
 }

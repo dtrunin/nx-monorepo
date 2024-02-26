@@ -1,7 +1,14 @@
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+.container {
+  display: grid;
+  gap: 25px;
+  grid-template-rows: repeat(3, min-content);
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
