@@ -68,7 +68,8 @@ export function FeatureTimingTraining() {
       {!!intervals.length && (
         <div className={styles['grid-with-columns']}>
           <div>
-            {`${trainingTime} + ${trainingInterval}`}
+            {`${trainingTime}`}
+            {intervals.length > 1 && ` + ${trainingInterval}`}
             {isShowResult && ` = ${trainingResult}`}
           </div>
           <div>
