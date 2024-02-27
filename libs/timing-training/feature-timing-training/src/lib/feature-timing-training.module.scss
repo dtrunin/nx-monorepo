@@ -1,0 +1,45 @@
+body {
+  background-color: #fafafa;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  gap: 20px ;
+  height: 100vh;
+  color: #333;
+}
+
+.grid-with-columns {
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input, button {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #007BFF;
+  border-color: #007BFF;
+}
+
+button:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.training-button {
+  min-width: 120px;
+}

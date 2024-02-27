@@ -1,0 +1,8 @@
+{
+  "name": "timing-training-feature-timing-training",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/timing-training/feature-timing-training/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

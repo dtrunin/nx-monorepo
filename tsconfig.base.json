@@ -25,6 +25,9 @@
         "libs/courses/shared/feature-header/src/index.ts"
       ],
       "@nx-monorepo/courses-shared-ui": ["libs/courses/shared/ui/src/index.ts"],
+      "@nx-monorepo/timing-training-feature-timing-training": [
+        "libs/timing-training/feature-timing-training/src/index.ts"
+      ],
       "@nx-monorepo/shared-util-formatting": [
         "libs/shared/util/formatting/src/index.ts"
       ],
