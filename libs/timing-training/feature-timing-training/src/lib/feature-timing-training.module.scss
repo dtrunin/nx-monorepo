@@ -33,13 +33,10 @@ button {
   color: #fff;
   background-color: #007BFF;
   border-color: #007BFF;
+  width: 120px;
 }
 
 button:hover {
   background-color: #0056b3;
   border-color: #004085;
-}
-
-.training-button {
-  min-width: 120px;
 }

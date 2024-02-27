@@ -73,11 +73,7 @@ export function FeatureTimingTraining() {
             {isShowResult && ` = ${trainingResult}`}
           </div>
           <div>
-            <button
-              ref={trainingButtonRef}
-              className={styles['training-button']}
-              onClick={nextTrainingState}
-            >
+            <button ref={trainingButtonRef} onClick={nextTrainingState}>
               {trainingButtonText}
             </button>
           </div>
