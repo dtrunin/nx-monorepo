@@ -19,7 +19,7 @@ export function FeatureTimingTraining() {
 
     const nextIntervals = intervalsString
       .split(separator)
-      .map(parseInt)
+      .map((s) => parseInt(s))
       .filter(Number.isInteger);
 
     setIntervalsString(nextIntervals.join(separator));
