@@ -21,9 +21,10 @@ function CourseInfo({ name, value }: CourseInfoProps) {
 
 export interface CourseCardProps {
   course: Course;
+  onShowCourse: (course: Course) => void;
 }
 
-export function CourseCard({ course }: CourseCardProps) {
+export function CourseCard({ course, onShowCourse }: CourseCardProps) {
   return (
     <div className={styles['card']}>
       <h1>{course.title}</h1>
@@ -37,7 +38,10 @@ export function CourseCard({ course }: CourseCardProps) {
           <CourseInfo name="Duration" value={formatDuration(course.duration)} />
           <CourseInfo name="Created" value={formatDate(course.creationDate)} />
           <div className={styles['buttons']}>
-            <Button text="Show course"></Button>
+            <Button
+              text="Show course"
+              onClick={() => onShowCourse(course)}
+            ></Button>
           </div>
         </div>
       </div>

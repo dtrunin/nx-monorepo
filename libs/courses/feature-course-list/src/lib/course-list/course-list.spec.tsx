@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import FeatureCourseList from './feature-course-list';
+import CourseList from './course-list';
 
 describe('FeatureCourseList', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<FeatureCourseList />);
+    const { baseElement } = render(<CourseList />);
     expect(baseElement).toBeTruthy();
   });
 });

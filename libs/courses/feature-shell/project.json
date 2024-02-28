@@ -1,0 +1,8 @@
+{
+  "name": "courses-feature-shell",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/courses/feature-shell/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}
