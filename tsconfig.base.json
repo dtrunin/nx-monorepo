@@ -21,6 +21,9 @@
       "@nx-monorepo/courses-feature-course-list": [
         "libs/courses/feature-course-list/src/index.ts"
       ],
+      "@nx-monorepo/courses-feature-login": [
+        "libs/courses/feature-login/src/index.ts"
+      ],
       "@nx-monorepo/courses-feature-shell": [
         "libs/courses/feature-shell/src/index.ts"
       ],
